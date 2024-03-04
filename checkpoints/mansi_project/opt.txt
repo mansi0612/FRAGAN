@@ -1,0 +1,64 @@
+----------------- Options ---------------
+                batchSize: 1                             
+                    beta1: 0.5                           
+          checkpoints_dir: ./checkpoints/                
+           continue_train: False                         
+                 dataroot: themal_image_data             	[default: None]
+             dataset_mode: aligned                       
+             display_freq: 100                           
+               display_id: 0                             
+            display_ncols: 4                             
+             display_port: 8097                          
+           display_server: http://localhost              
+          display_winsize: 256                           
+              epoch_count: 1                             
+               fineSize_h: 256                           
+               fineSize_w: 256                           
+                  gpu_ids: 0                             
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: True                          	[default: None]
+                lambda_L1: 100.0                         
+               loadSize_h: 256                           
+               loadSize_w: 256                           
+                       lr: 0.0002                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+         max_dataset_size: inf                           
+                    model: pix2pix                       
+                 nThreads: 2                             
+               n_layers_D: 3                             
+                     name: mansi_project                 	[default: experiment_name]
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 100                           
+              niter_decay: 100                           
+               no_dropout: False                         
+                  no_flip: False                         
+                  no_html: False                         
+                 no_lsgan: False                         
+                     norm: instance                      
+                output_nc: 3                             
+                    phase: train                         	[default: train/]
+                pool_size: 50                            
+               print_freq: 100                           
+           resize_or_crop: resize_and_crop               
+          save_epoch_freq: 10                            
+         save_latest_freq: 5000                          
+           serial_batches: False                         
+                   suffix:                               
+               train_flip: True                          
+         update_html_freq: 100                           
+                  use_GAN: 1                             
+            use_condition: 1                             
+                use_wandb: False                         
+                  verbose: False                         
+                    w_gan: 0.03                          
+                     w_ss: 1.25                          
+                     w_tv: 1.25                          
+                    w_vgg: 1                             
+          which_direction: AtoB                          
+              which_epoch: latest                        
+         which_model_netD: basic                         
+         which_model_netG: fragan                        
+----------------- End -------------------
